@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Invitation</title>
+  </head>
+  <body>
+    <header>
+      <marquee><h1>You're Invited!</h1></marquee>
+    </header>
+
+    <div class="container">
+      <div class="main-content">
+        <div class="event-details">
+          <h2>Event Details</h2>
+          <p><strong>Date:</strong> July 24, 2024</p>
+          <p><strong>Time:</strong> 6:00 PM - 9:00 PM</p>
+          <p><strong>Location:</strong> 123 Main Street, Cityville</p>
+        </div>
+
+        <div class="rsvp">
+          <h2>RSVP</h2>
+          <form action="https://formspree.io/f/xqaedadj" method="post">
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div>
+              <label for="guests">Number of Guests:</label>
+              <input
+                type="number"
+                id="guests"
+                name="guests"
+                min="1"
+                max="10"
+                required
+              />
+            </div>
+            <div>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+            <button type="submit">Submit RSVP</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
